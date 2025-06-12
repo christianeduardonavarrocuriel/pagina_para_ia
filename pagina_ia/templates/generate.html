@@ -1,23 +1,22 @@
-$def with(resultado = 0)
+$def with (response = "")
 <!DOCTYPE html>
-<html lang = "es">
+<html lang ="en">
 <head>
-    <meta charset = "utf.8">
-    <meta name = "viewport" content = "width = device-width, initial-scale = 1">
-    <title>Mi IA</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width", initial-scale="1.0">
+    <tittle>IA</tittle>
 </head>
-    <body>
-        <h1>Mi IA</h1>
-        <form method="post">
-
-            <label for="requests" name="requests">Escribe Aqui</label><br>
-            <input type="text" name="inp_numero1" id="inp_numero1" value=int><br>
-
-            <label for="response" name="response">Resultado</label><br>
-            <input type="text" name="response id="response" value=$resultado><br>
-
-            <button type="button" class="btn btn-outline-info">Info</button>
+<body>
+    <div class = "form">
+        <form method="POST">
+            <textarea type="text" name="response" id="response" rows="30" cols="50" readonly>$response</textarea>
+            <br>
+            <label for="inp_prompt">Escribe aquí</label>
+            <br>
+            <input type="text" name="inp_prompt" id="inp_prompt" placeholder="inp_prompt" required>
+            <br>
+            <button type="submit" name="respuesta">Respuesta</button>
         </form>
-
-    </body>
+    </div>
+</body>
 </html>
