@@ -5,7 +5,8 @@ Este repositorio es para hacer una página sobre mi IA
 curl http://localhost:11434/api/generate -d '{
   "model": "gemma3:1b",
   "prompt":"hola",
-}
+  "stream":false
+}'
 ```
 
 Este comando sirve para poder generar un mensaje

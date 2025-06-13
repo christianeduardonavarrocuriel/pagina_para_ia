@@ -1,4 +1,5 @@
 import web
+import requests
 
 urls = (
     '/', 'IA'
